@@ -17,13 +17,11 @@ const Header = () => {
                  show? <FaSquareXmark/>:<FaBars />
                }
             </div>
-            <nav className={`bg-green-600 m-2 flex flex-col md:flex-row w-5/12 md:w-full absolute md:static top-2 justify-center items-center gap-10 p-3 rounded-xl md:rounded-sm  font-bold text-lg duration-500 
-            ${show?'top-2':'-top-96'}
-            `}>
-                <ActiveLink to={'/'}>Home</ActiveLink>
-                <ActiveLink to={'/review'}>Order Review</ActiveLink>
-                <ActiveLink to={'/grandpa'}>Context</ActiveLink>
-                <ActiveLink to={'/contact'}>Contact</ActiveLink>
+            <nav className={`bg-green-600 m-2 flex flex-col md:flex-row w-5/12 md:w-full absolute md:static top-2 justify-center items-center gap-10 p-3 rounded-xl md:rounded-sm  font-bold text-lg duration-500 ${ show? 'top-2' : 'top-[-500px]'}`}>
+                <Link to={'/'}>Home</Link>
+                <Link to={'/review'}>Order Review</Link>
+                <Link to={'/grandpa'}>Context</Link>
+                <Link to={'/contact'}>Contact</Link>
             </nav>
         </div>
     );
