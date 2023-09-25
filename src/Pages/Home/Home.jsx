@@ -89,19 +89,15 @@ const Home = () => {
                     {
                         cart.length===0 && <p className='font-bold'>Please Add some product</p>
                     }
-
-
-                    {
+                    {/* {
                         cart.length!=0 || <p className='font-bold'>Sweet Shirt</p>
-                    }
+                    } */}
 
                     
                     {
-                       cart.length>0? <p className={`border-2 m-4 ${cart.length>2?`bg-yellow-400 ${cart.length>3?`bg-green-500`
-                       :''}`
-                       :''}`}> 
-                       Thank you</p>  
-                       : ''
+                       cart.length>0? <p className={`border-2 m-4 ${cart.length>2?`bg-yellow-400
+                       ${cart.length>2?`bg-green-600`:``}
+                       `:``}`}> Thank you </p> : ``
                     }
                     <div>
                         {

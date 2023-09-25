@@ -21,9 +21,9 @@ const Header = () => {
             ${show?'top-2':'-top-96'}
             `}>
                 <ActiveLink to={'/'}>Home</ActiveLink>
-                <Link to={'/review'}>Order Review</Link>
-                <Link to={'/grandpa'}>Context</Link>
-                <Link to={'/contact'}>Contact</Link>
+                <ActiveLink to={'/review'}>Order Review</ActiveLink>
+                <ActiveLink to={'/grandpa'}>Context</ActiveLink>
+                <ActiveLink to={'/contact'}>Contact</ActiveLink>
             </nav>
         </div>
     );

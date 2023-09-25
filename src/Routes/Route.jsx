@@ -9,12 +9,14 @@ import Contact from "../Pages/Contact/Contact";
 import Context from "../Pages/Context/Context";
 import GrandPa from "../Pages/AllContextPage/GrandPa";
 import Details from "../Pages/Details/Details";
+import ErrorElement from "../Pages/ErrorElement/ErrorElement";
 
 
   const router = createBrowserRouter([
     {
       path: "/",
       element: <Main/>,
+      errorElement: <ErrorElement></ErrorElement>,
       children:[
         {
             path: "/",
