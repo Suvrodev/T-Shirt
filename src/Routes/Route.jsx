@@ -10,6 +10,9 @@ import Context from "../Pages/Context/Context";
 import GrandPa from "../Pages/AllContextPage/GrandPa";
 import Details from "../Pages/Details/Details";
 import ErrorElement from "../Pages/ErrorElement/ErrorElement";
+import Login from "../Pages/Login/Login";
+import Registration from "../Pages/Registration/Registration";
+import PrivateRoute from "../Pages/AuthProvider/PrivateRoute/PrivateRoute";
 
 
   const router = createBrowserRouter([
@@ -40,7 +43,15 @@ import ErrorElement from "../Pages/ErrorElement/ErrorElement";
         },
         {
           path: '/shirt/:id',
-          element: <Details></Details>
+          element: <PrivateRoute><Details></Details></PrivateRoute>
+        },
+        {
+          path:'/login',
+          element: <Login></Login>
+        },
+        {
+          path: '/registration',
+          element: <Registration></Registration>
         }
       ]
     },

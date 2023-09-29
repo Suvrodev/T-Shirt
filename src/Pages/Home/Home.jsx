@@ -31,7 +31,7 @@ const Home = () => {
     }
 
     const [tshirts,setTshirts]=useState([])
-    const api=`https://raw.githubusercontent.com/ProgrammingHero1/t-shirt-data/main/tshirt.json`
+    const api=`https://tshirt-server-d7ops1uhg-suvrodev.vercel.app/tshirt`
     useEffect(()=>{
         fetch(api)
         .then(res=>res.json())
